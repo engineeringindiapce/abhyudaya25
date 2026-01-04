@@ -35,29 +35,29 @@ export default function EventsPage({ onNavigate }) {
     },
     {
       id: 2,
-      title: "Pragyan Lecture Series - Lecture 1",
-      description: "First lecture in the enlightening Pragyan Lecture Series",
-      detailText: "An inspiring talk by eminent speaker—perspectives, insights, and Q&A.",
-      route: "event-pragyan-lecture-1",
+      title: "Pragyan Lecture Series",
+      description: "Two enlightening lectures by eminent speakers with insights and Q&A",
+      detailText: "An inspiring two-part lecture series—perspectives, insights, and interactive sessions.",
+      route: "event-pragyan-lecture-series",
       icon: "🎤",
       category: "intellectual"
     },
     {
       id: 3,
-      title: "Pragyan Lecture Series - Lecture 2",
-      description: "Second lecture in the enlightening Pragyan Lecture Series",
-      detailText: "Deep-dive session to broaden your understanding and curiosity.",
-      route: "event-pragyan-lecture-2",
-      icon: "🎤",
-      category: "intellectual"
-    },
-    {
-      id: 4,
       title: "Pragyan Panel Discussion",
       description: "Insightful panel discussion bringing diverse perspectives",
       detailText: "Experts debate contemporary topics—hear multiple sides and ask questions.",
       route: "event-pragyan-panel",
       icon: "💬",
+      category: "intellectual"
+    },
+    {
+      id: 4,
+      title: "Group Discussion",
+      description: "Showcase your communication and critical thinking in a group setting",
+      detailText: "Participate in structured discussions on contemporary topics.",
+      route: "event-group-discussion",
+      icon: "🗣",
       category: "intellectual"
     },
     {
@@ -245,7 +245,7 @@ export default function EventsPage({ onNavigate }) {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.8, duration: 0.6 }}
         >
-          <p className="text-lg sm:text-xl md:text-2xl font-poppins font-bold drop-shadow-lg uppercase tracking-widest">
+          <p className="text-sm sm:text-lg md:text-2xl font-poppins font-bold drop-shadow-lg uppercase tracking-wide sm:tracking-widest">
             {"Discover 12 Amazing Competitions & Experiences".split(" ").map((word, idx) => (
               <motion.span
                 key={idx}
@@ -301,7 +301,7 @@ export default function EventsPage({ onNavigate }) {
 
       {/* Events Grid */}
       <motion.div 
-        className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8 lg:gap-10 relative z-10 px-4 sm:px-6 md:px-8 pb-16"
+        className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-10 relative z-10 px-3 sm:px-6 md:px-8 pb-16"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
