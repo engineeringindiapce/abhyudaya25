@@ -34,6 +34,42 @@ export default function EventsPage({ onNavigate }) {
       category: "tech"
     },
     {
+      id: 9,
+      title: "Hackathon",
+      description: "Build innovative solutions in a time-bound challenge",
+      detailText: "A 24-hour sprint to prototype and pitch your idea.",
+      route: "event-hackathon",
+      icon: "💻",
+      category: "tech"
+    },
+    {
+      id: 8,
+      title: "Treasure Hunt",
+      description: "An adventurous quest full of surprises and challenges",
+      detailText: "Solve clues, race through campus, and find the treasure!",
+      route: "event-treasure-hunt",
+      icon: "🗺️",
+      category: "energetic"
+    },
+    {
+      id: 11,
+      title: "Youth Parliament",
+      description: "Debate and discuss contemporary issues",
+      detailText: "Simulate the parliament—debate policies and propose reforms.",
+      route: "event-yuva-sansad",
+      icon: "🏛️",
+      category: "intellectual"
+    },
+    {
+      id: 10,
+      title: "Project Competition",
+      description: "Showcase your projects and compete with the best",
+      detailText: "Demo your project to judges and the crowd.",
+      route: "event-project",
+      icon: "🚀",
+      category: "tech"
+    },
+    {
       id: 2,
       title: "Pragyan Lecture Series",
       description: "Two enlightening lectures by eminent speakers with insights and Q&A",
@@ -86,42 +122,6 @@ export default function EventsPage({ onNavigate }) {
       route: "event-drawing",
       icon: "🎨",
       category: "creative"
-    },
-    {
-      id: 8,
-      title: "Treasure Hunt",
-      description: "An adventurous quest full of surprises and challenges",
-      detailText: "Solve clues, race through campus, and find the treasure!",
-      route: "event-treasure-hunt",
-      icon: "🗺️",
-      category: "energetic"
-    },
-    {
-      id: 9,
-      title: "Hackathon",
-      description: "Build innovative solutions in a time-bound challenge",
-      detailText: "A 24-hour sprint to prototype and pitch your idea.",
-      route: "event-hackathon",
-      icon: "💻",
-      category: "tech"
-    },
-    {
-      id: 10,
-      title: "Project Competition",
-      description: "Showcase your projects and compete with the best",
-      detailText: "Demo your project to judges and the crowd.",
-      route: "event-project",
-      icon: "🚀",
-      category: "tech"
-    },
-    {
-      id: 11,
-      title: "Youth Parliament",
-      description: "Debate and discuss contemporary issues",
-      detailText: "Simulate the parliament—debate policies and propose reforms.",
-      route: "event-yuva-sansad",
-      icon: "🏛️",
-      category: "intellectual"
     },
     {
       id: 12,
@@ -215,8 +215,8 @@ export default function EventsPage({ onNavigate }) {
           style={{
             fontFamily: 'Poppins, system-ui, sans-serif',
             fontWeight: 900,
-            fontSize: 'clamp(32px, 7vw, 90px)',
-            letterSpacing: '0.15em',
+            fontSize: 'clamp(24px, 5.5vw, 90px)',
+            letterSpacing: '0.12em',
             textShadow: '0 4px 18px rgba(0,0,0,0.25), 0 0 30px rgba(249,115,22,0.45), 0 0 50px rgba(37,99,235,0.3)',
             background: 'linear-gradient(90deg, #f97316, #22c55e, #2563eb)',
             WebkitBackgroundClip: 'text',
@@ -307,13 +307,13 @@ export default function EventsPage({ onNavigate }) {
         animate="visible"
       >
         {events.map((event, index) => (
-          <motion.div
-            key={event.id}
-            variants={cardVariants}
-            onMouseEnter={() => setHoveredCard(event.id)}
-            onMouseLeave={() => setHoveredCard(null)}
-            className="h-full"
-          >
+          <article key={event.id} className="h-full">
+            <motion.div
+              variants={cardVariants}
+              onMouseEnter={() => setHoveredCard(event.id)}
+              onMouseLeave={() => setHoveredCard(null)}
+              className="h-full"
+            >
             <motion.div
               className="relative h-full rounded-2xl overflow-hidden cursor-pointer group shadow-2xl"
               whileHover={{ y: -12, scale: 1.03 }}
@@ -467,61 +467,17 @@ export default function EventsPage({ onNavigate }) {
                     whileTap={{ scale: 0.95 }}
                     onClick={(e) => { e.stopPropagation(); onNavigate(event.route || 'events'); }}
                   >
-                    Explore
+                    Register
                   </motion.button>
                 </motion.div>
               )}
             </motion.div>
-          </motion.div>
+            </motion.div>
+          </article>
         ))}
       </motion.div>
 
       {/* Bottom CTA */}
-      <motion.div
-        className="text-center pt-16 pb-20 relative z-10 px-4 sm:px-6 md:px-8"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5, duration: 0.8 }}
-      >
-        <p className="text-orange-600 text-xl sm:text-2xl mb-10 font-poppins font-black drop-shadow-lg uppercase tracking-widest" style={{ textShadow: '0 0 25px rgba(249, 115, 22, 0.7)' }}>
-          Ready to Participate?
-        </p>
-        <motion.button
-          onClick={() => alert('Register clicked!')}
-          className="relative px-12 sm:px-16 md:px-20 lg:px-24 py-5 sm:py-6 md:py-7 lg:py-8 font-black text-xl sm:text-2xl md:text-3xl uppercase tracking-wider overflow-hidden group"
-          whileHover={{ scale: 1.08, y: -4 }}
-          whileTap={{ scale: 0.95 }}
-          transition={{ duration: 0.25, ease: "easeOut" }}
-        >
-          {/* Wooden Background with texture */}
-          <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-amber-700 via-amber-900 to-amber-800 shadow-2xl border-4 border-amber-600" 
-            style={{
-              backgroundImage: `
-                repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0,0,0,.1) 2px, rgba(0,0,0,.1) 4px),
-                repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,.1) 2px, rgba(255,255,255,.1) 4px),
-                linear-gradient(135deg, rgba(139, 90, 43, 0.8), rgba(160, 82, 45, 0.8))
-              `,
-              boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.2), 0 8px 16px rgba(0,0,0,0.6)'
-            }}
-          />
-          
-          {/* Glow effect on hover */}
-          <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-red-500/0 via-red-400/0 to-red-500/0 group-hover:from-red-500/30 group-hover:via-red-400/40 group-hover:to-red-500/30 transition-all duration-300 blur-md" />
-          
-          {/* Text with shadow */}
-          <span className="relative text-white drop-shadow-lg font-black" style={{ textShadow: '3px 3px 6px rgba(0,0,0,0.8), 1px 1px 2px rgba(0,0,0,0.5)' }}>
-            REGISTER NOW
-          </span>
-
-          {/* Shine effect */}
-          <motion.div
-            className="absolute inset-0 rounded-lg bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20"
-            animate={{ x: ['-100%', '100%'] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-          />
-        </motion.button>
-      </motion.div>
-
       {/* Top Navigation Bar - Match Home Page Exactly */}
       <motion.div 
         className="absolute top-0 left-0 right-0 z-50 bg-gradient-to-b from-black/90 via-black/70 to-transparent px-4 sm:px-6 md:px-8 pt-4 pb-3 sm:pt-5 sm:pb-4"
