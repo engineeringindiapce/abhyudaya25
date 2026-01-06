@@ -100,7 +100,6 @@ export default function MainScreen({ onNavigate }) {
                     key={item.label}
                     initial={{ opacity: 0, y: 50, scale: 0.8 }}
                     animate={{ opacity: 1, y: 0, scale: 1 }}
-                    
                     transition={{
                       duration: 0.8,
                       delay: 0.8 + index * 0.2,
@@ -129,26 +128,28 @@ export default function MainScreen({ onNavigate }) {
                   </span>
                 ))}
               </div>
-
-
-              
             </div>
           </motion.header>
         )}
       </AnimatePresence>
 
-      {/* Main Title */}
+      {/* Main Title + Sanskrit Tagline */}
       <AnimatePresence>
         {showUi && (
           <motion.div
             initial={{ opacity: 0, scale: 0.7 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 1, duration: 1.5, type: "spring" }}
-            className="absolute inset-0 flex items-center justify-center z-40 pointer-events-none px-6"
+            className="absolute inset-0 flex flex-col items-center justify-center z-40 pointer-events-none px-6 gap-4 md:gap-8"
           >
             <h1 className="text-5xl xs:text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[11rem] font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-white to-amber-200 drop-shadow-3xl tracking-tight text-center leading-none">
               ABHYUDAYA ’25
             </h1>
+
+            {/* Sanskrit Tagline - Responsive & Flexible */}
+            <p className="text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-amber-100/90 text-center leading-tight tracking-wide drop-shadow-2xl max-w-5xl px-4">
+              परं वैभवं नेतुमेतत् स्वराष्ट्रम्
+            </p>
           </motion.div>
         )}
       </AnimatePresence>
@@ -162,13 +163,13 @@ export default function MainScreen({ onNavigate }) {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 1.4, duration: 0.6, type: "spring", stiffness: 130 }}
-              className="fixed inset-0  flex items-end   bottom justify-center p-9 sm:hidden"
+              className="fixed inset-x-0 bottom-8 flex justify-center z-50 px-4 sm:hidden"
             >
               <motion.button
                 onClick={() => onNavigate("events")}
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-11/12 max-w-xs bg-amber-600/95 hover:bg-amber-500 text-white font-extrabold text-lg py-4 rounded-full shadow-2xl border-2 border-amber-400/60 focus:outline-none focus:ring-4 focus:ring-amber-300/40"
+                className="w-full max-w-xs bg-amber-600/95 hover:bg-amber-500 text-white font-extrabold text-lg py-4 rounded-full shadow-2xl border-2 border-amber-400/60 focus:outline-none focus:ring-4 focus:ring-amber-300/40"
                 aria-label="Register Now"
               >
                 Register Now
