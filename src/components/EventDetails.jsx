@@ -194,9 +194,10 @@ const EVENT_DATA = {
     ],
     rulebookUrl: "https://example.com/yuva-rulebook.pdf",
     contact: [
-      { name: "Coordinator 1: Ankit Chandrakar", phone: "+91-8308877784" },
-      { name: "Coordinator 2: Dayal Ghoble", phone: "+91-9545274943" },
-      { name: "Coordinator 3: Shushobhita Mallick", phone: "+91-9518545205" }
+      { name: "Coordinator 1: Shushobhita Mallick:", phone: "+91-951854505" },
+      { name: "Coordinator 2: Vrushabh Talekar", phone: "+91-9822053455" },
+      { name: "Coordinator 3: Jayraj Pachpor", phone: "+91-8999428921" },
+      { name: "Coordinator 4: Shrishti Nath", phone: "+91-9258301628" }
     ],
     prizePool: "₹8,000",
     venue: "Yadav Bhavan (Ground Floor) - Round 1, Maharshi Vyas Sabagruh - Round 2"
