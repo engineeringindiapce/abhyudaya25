@@ -22,7 +22,7 @@ const EVENT_DATA = {
     about: "Compete as a socially conscious technocrat—solve civic-tech problems with impact-first thinking.",
     rulebookUrl: "/rulebooks/Ultimate Socio-Technocrat_rulebook.pdf",
     contact: [
-      { name: "Coordinator 1: Prany Pakhonde", phone: "+91-8767974636" },
+      { name: "Coordinator 1: Pranay Rakhonde", phone: "+91-8767974636" },
       { name: "Coordinator 2: Isha Khatri", phone: "+91-8446904436" }
     ],
     prizePool: "₹9,000",
@@ -84,7 +84,7 @@ const EVENT_DATA = {
     rulebookUrl: "/rulebooks/Silver screen_rulebook.pdf",
     contact: [
       { name: "Coordinator 1: Shreenath Dhole", phone: "+91-9637594399" },
-      { name: "Coordinator 2: Pranay Surtavanshi", phone: "+91-9309553192" }
+      { name: "Coordinator 2: Pranay Suryavanshi", phone: "+91-9309553192" }
     ],
     prizePool: "₹6,000",
     venue: "Yadav Bhavan"
