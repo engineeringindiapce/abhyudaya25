@@ -226,7 +226,7 @@ export default function EventDetails({ route, onNavigate }) {
             {/* Quick Info */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 mb-6 sm:mb-8">
               <InfoCard label="Team Size" value={data.teamSize} />
-              {data.entryFee === "₹350 per project" ? (
+              {(data.entryFee.includes("per project") || data.entryFee.includes("per team")) ? (
                 <InfoCard label="Entry Fee (per Team)" value={data.entryFee} />
               ) : (
                 <InfoCard label="Entry Fee (per person)" value={data.entryFee} />
