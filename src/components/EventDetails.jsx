@@ -18,9 +18,8 @@ const EVENT_DATA = {
     posterUrl: posterUST,
     registerUrl: "https://forms.gle/v9oVjrefsgEKrwEe6",
     teamSize: "3-5",
-    entryFee: "₹100",
+    entryFee: "₹100 /- per person",
     about: "Compete as a socially conscious technocrat—solve civic-tech problems with impact-first thinking.",
-    rulebookUrl: "/rulebooks/Ultimate Socio-Technocrat_rulebook.pdf",
     contact: [
       { name: "Coordinator 1: Pranay Rakhonde", phone: "+91-8767974636" },
       { name: "Coordinator 2: Isha Khatri", phone: "+91-8446904436" }
@@ -33,9 +32,8 @@ const EVENT_DATA = {
     posterUrl: posterLectureSeries,
     registerUrl: "https://forms.gle/U4j88Td6TJcM6Gyu9",
     teamSize: "Individual",
-    entryFee: "₹100",
+    entryFee: "₹100 /- per person",
     about: "A two-part enlightening lecture series featuring eminent speakers with perspectives, insights, and interactive Q&A sessions.",
-    rulebookUrl: "/rulebooks/Pragyan Lecture Series_Rulebook.pdf",
     contact: [
       { name: "Coordinator 1: Roshan Ithankar", phone: "+91-8459994371" },
       { name: "Coordinator 2: Tushar Talekar", phone: "+91-7507306312" }
@@ -48,9 +46,8 @@ const EVENT_DATA = {
     posterUrl: null,
     registerUrl: "https://forms.gle/U4j88Td6TJcM6Gyu9",
     teamSize: "Audience",
-    entryFee: "₹100",
+    entryFee: "₹100 /- per person",
     about: "Experts debate contemporary topics—hear multiple sides and ask questions.",
-    rulebookUrl: "/rulebooks/Panel Discussion_rulebook.pdf",
     contact: [
       { name: "Coordinator 1: Rahul Trivedi", phone: "+91-8668997469" },
       { name: "Coordinator 2: Prajwala Dhurve", phone: "+91-8668997469" }
@@ -63,9 +60,8 @@ const EVENT_DATA = {
     posterUrl: posterSpeech,
     registerUrl: "https://forms.gle/U4j88Td6TJcM6Gyu9",
     teamSize: "Individual",
-    entryFee: "₹100",
+    entryFee: "₹100 /- per person",
     about: "Craft compelling arguments and deliver memorable speeches.",
-    rulebookUrl: "/rulebooks/Speech Competition_Rulebook.pdf",
     contact: [
       { name: "Coordinator 1: Krish Agrawal", phone: "+91-8956369613" },
       { name: "Coordinator 2: Vaishnavi Mamulkar", phone: "+91-9699836744" },
@@ -79,9 +75,8 @@ const EVENT_DATA = {
     posterUrl: posterReel,
     registerUrl: "https://forms.gle/U4j88Td6TJcM6Gyu9",
     teamSize: "Individual",
-    entryFee: "₹100",
+    entryFee: "₹100 /- per person",
     about: "Make creative reels—story, edit, and wow the audience.",
-    rulebookUrl: "/rulebooks/Silver screen_rulebook.pdf",
     contact: [
       { name: "Coordinator 1: Shreenath Dhole", phone: "+91-9637594399" },
       { name: "Coordinator 2: Pranay Suryavanshi", phone: "+91-9309553192" }
@@ -94,9 +89,8 @@ const EVENT_DATA = {
     posterUrl: posterDrawing,
     registerUrl: "https://forms.gle/U4j88Td6TJcM6Gyu9",
     teamSize: "Individual",
-    entryFee: "₹100",
+    entryFee: "₹100 /- per person",
     about: "Showcase your art skills—theme-based drawing challenge.",
-    rulebookUrl: "/rulebooks/Drawing Competition P.pdf",
     contact: [
       { name: "Coordinator 1: Vedant Satpaise", phone: "+91-7057458920" },
       { name: "Coordinator 2: Prachiti Kothekar", phone: "+91-9172013926" },
@@ -112,7 +106,6 @@ const EVENT_DATA = {
     teamSize: "3-5 (Individual entries allowed - teams will be formed on spot)",
     entryFee: "₹100 per person",
     about: "Solve clues, race through campus, and find the treasure!",
-    rulebookUrl: "/rulebooks/Treasure Hunt_rulebook.pdf",
     contact: [
       { name: "Coordinator 1: Devansh Burhade", phone: "+91-9673903008" },
       { name: "Coordinator 2: Charvi Khandar", phone: "+91-7385395360" }
@@ -121,14 +114,13 @@ const EVENT_DATA = {
     venue: "Maharshi Vyas Sabagruh"
   },
   "event-hackathon": {
-    title: "Hackathon — Sankalpthon",
+    title: "Hackathon",
     posterUrl: posterHackathon,
     registerUrl: "https://forms.gle/jYBbkYTwhuWBqRDS7",
     teamSize: "1-4",
     entryFee: "₹100/- per person",
 
     about: "A national-level 24-hour innovation challenge where teams solve real-world problem statements, earn XP, and build prototypes to top the live leaderboard.",
-    rulebookUrl: "/rulebooks/Hackathon_rulebook.pdf",
     contact: [
       { name: "Coordinator 1: Yashpal Chandewar", phone: "+91-7821903083" },
       { name: "Coordinator 2: Samruddhi Raut", phone: "+91-7248940875" }
@@ -140,10 +132,9 @@ const EVENT_DATA = {
     title: "Project Competition — Prayog Manthan",
     posterUrl: posterProject,
     registerUrl: "https://forms.gle/EoreVKfNNV2fiPMa6",
-    teamSize: "Free (Any team size)",
+    teamSize: "1-4",
     entryFee: "₹350 per project",
     about: "Showcase your prototypes — circuits, hardware, and smart systems.",
-    rulebookUrl: "/rulebooks/Project Competition_Rulebook.pdf",
     contact: [
       { name: "Coordinator 1: Tejas Chaudhary", phone: "+91-9356802767" },
       { name: "Coordinator 2: Vaishnavi Bobade", phone: "+91-7666469109" }
@@ -156,9 +147,8 @@ const EVENT_DATA = {
     posterUrl: posterYouthParliament,
     registerUrl: "https://forms.gle/eXWMZwZfMf5ApNZSA",
     teamSize: "Individual",
-    entryFee: "₹100",
+    entryFee: "₹100 /- per person",
     about: "Leadership and governance simulation — debate policies and propose solutions.",
-    rulebookUrl: "/rulebooks/Youth Parliament_Rulebook.pdf",
     contact: [
       { name: "Coordinator 1: Ankit Chandrakar", phone: "+91-8308877784" },
       { name: "Coordinator 2: Dayal Ghoble", phone: "+91-9545274943" },
@@ -172,9 +162,8 @@ const EVENT_DATA = {
     posterUrl: posterGroupDiscussion,
     registerUrl: "https://forms.gle/U4j88Td6TJcM6Gyu9",
     teamSize: "Individual",
-    entryFee: "₹100",
+    entryFee: "₹100 /- per person",
     about: "Demonstrate your communication and critical thinking skills in a structured group discussion on contemporary topics.",
-    rulebookUrl: "/rulebooks/Group discussion_RULEBOOK.pdf",
     contact: [
       { name: "Coordinator 1: Raj Chaudhari", phone: "+91-9145552333" },
       { name: "Coordinator 2: Chiraye Patle", phone: "+91-8793801526" },
@@ -188,9 +177,8 @@ const EVENT_DATA = {
     posterUrl: posterOpenStage,
     registerUrl: "https://forms.gle/LPGtSnCmAaDgwGYD9",
     teamSize: "Solo/Duo/Group",
-    entryFee: "₹100",
+    entryFee: "₹100 /- per person",
     about: "A free stage to showcase any talent — music, dance, poetry, and more.",
-    rulebookUrl: "/rulebooks/Open Stage_rulebook.pdf",
     contact: [
       { name: "Coordinator 1: Siddeshawar Madne", phone: "+91-8767492833" },
       { name: "Coordinator 2: Prachi Nitnaware", phone: "+91-7841886750" }
@@ -246,12 +234,6 @@ export default function EventDetails({ route, onNavigate }) {
               
               {data.prizePool !== "—" && <InfoCard label="Prize Pool" value={data.prizePool} />}
             </div>
-
-            {/* Rulebook */}
-            <section className="mb-10">
-              <h2 className="text-2xl font-bold mb-3">Rulebook</h2>
-              <a href={data.rulebookUrl} target="_blank" rel="noreferrer" className="inline-block px-5 py-3 bg-white text-black rounded-lg font-bold">View Rulebook</a>
-            </section>
 
             {/* Contact */}
             <section>
