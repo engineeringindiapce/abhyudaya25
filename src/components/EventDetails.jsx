@@ -117,8 +117,8 @@ const EVENT_DATA = {
     title: "Hackathon",
     posterUrl: posterHackathon,
     registerUrl: "https://forms.gle/jYBbkYTwhuWBqRDS7",
-    teamSize: "1-4",
-    entryFee: "₹100/- per person",
+    teamSize: "3-5",
+    entryFee: "₹500/- per team",
 
     about: "A national-level 24-hour innovation challenge where teams solve real-world problem statements, earn XP, and build prototypes to top the live leaderboard.",
     contact: [
