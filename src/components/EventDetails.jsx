@@ -17,7 +17,7 @@ const EVENT_DATA = {
     title: "Ultimate Socio Technocrat",
     posterUrl: posterUST,
     registerUrl: "https://forms.gle/v9oVjrefsgEKrwEe6",
-    teamSize: "3-5",
+    teamSize: "3-5 (Individual entries allowed - teams will be formed on spot)",
     entryFee: "₹100 /- per person",
     about: "Compete as a socially conscious technocrat—solve civic-tech problems with impact-first thinking.",
     contact: [
@@ -45,7 +45,7 @@ const EVENT_DATA = {
     title: "Pragyan Panel Discussion",
     posterUrl: null,
     registerUrl: "https://forms.gle/U4j88Td6TJcM6Gyu9",
-    teamSize: "Audience",
+    teamSize: "Individual",
     entryFee: "₹100 /- per person",
     about: "Experts debate contemporary topics—hear multiple sides and ask questions.",
     contact: [
@@ -259,7 +259,13 @@ export default function EventDetails({ route, onNavigate }) {
                 />
               </div>
             )}
-            <a href={data.registerUrl} target="_blank" rel="noreferrer" className="block text-center px-6 py-4 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full font-black">Register Here</a>
+            {(route === "event-hackathon" || route === "event-pragyan-panel") ? (
+              <button disabled className="block w-full text-center px-6 py-4 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 rounded-full font-black cursor-not-allowed">
+                {route === "event-hackathon" ? "Launching Soon - Get Ready to Hack" : "Big Minds. Big conversations. Coming Soon!!"}
+              </button>
+            ) : (
+              <a href={data.registerUrl} target="_blank" rel="noreferrer" className="block text-center px-6 py-4 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 rounded-full font-black">Register Here</a>
+            )}
           </div>
         </div>
       </div>
