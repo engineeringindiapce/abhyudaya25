@@ -17,7 +17,7 @@ const EVENT_DATA = {
     title: "Ultimate Socio Technocrat",
     posterUrl: posterUST,
     registerUrl: "https://forms.gle/v9oVjrefsgEKrwEe6",
-    teamSize: "3-5 (Individual entries allowed - teams will be formed on spot)",
+    teamSize: "3–5 (Individual entries allowed – teams will be formed by the organizers after registration)",
     entryFee: "₹100 /- per person",
     about: "Compete as a socially conscious technocrat—solve civic-tech problems with impact-first thinking.",
     contact: [
