@@ -110,7 +110,7 @@ const EVENT_DATA = {
     posterUrl: posterTreasureHunt,
     registerUrl: "https://forms.gle/oGW1TA2f7tm9dNwC7",
     teamSize: "3-5 (Individual entries allowed - teams will be formed on spot)",
-    entryFee: "₹100 per team",
+    entryFee: "₹100 per person",
     about: "Solve clues, race through campus, and find the treasure!",
     rulebookUrl: "/rulebooks/Treasure Hunt_rulebook.pdf",
     contact: [
@@ -238,7 +238,12 @@ export default function EventDetails({ route, onNavigate }) {
             {/* Quick Info */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 mb-6 sm:mb-8">
               <InfoCard label="Team Size" value={data.teamSize} />
-              <InfoCard label="Entry Fee (per person)" value={data.entryFee} />
+              {data.entryFee === "₹350 per project" ? (
+                <InfoCard label="Entry Fee (per Team)" value={data.entryFee} />
+              ) : (
+                <InfoCard label="Entry Fee (per person)" value={data.entryFee} />
+              )}
+              
               {data.prizePool !== "—" && <InfoCard label="Prize Pool" value={data.prizePool} />}
             </div>
 
