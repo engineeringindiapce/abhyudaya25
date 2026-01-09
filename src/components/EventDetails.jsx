@@ -166,7 +166,7 @@ const EVENT_DATA = {
     about: "Demonstrate your communication and critical thinking skills in a structured group discussion on contemporary topics.",
     contact: [
       { name: "Coordinator 1: Raj Chaudhari", phone: "+91-9145552333" },
-      { name: "Coordinator 2: Chiraye Patle", phone: "+91-8793801526" },
+      { name: "Coordinator 2: Chirayu Patle", phone: "+91-8793801526" },
       { name: "Coordinator 3: Sanwedana Lokhande", phone: "+91-9834705122" }
     ],
     prizePool: "₹6,000",
