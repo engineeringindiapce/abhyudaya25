@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import posterUST from "../assets/UST.png";
-import posterLectureSeries from "../assets/Lecture Series.png";
+import posterLectureSeries from "../assets/Lecture Series.jpeg";
+import posterPanelDiscussion from "../assets/Panel Discussion.jpeg";
 import posterGroupDiscussion from "../assets/Group Discussion.png";
 import posterSpeech from "../assets/Speech Competition.png";
 import posterReel from "../assets/Reel competition.png";
@@ -43,7 +44,7 @@ const EVENT_DATA = {
   },
   "event-pragyan-panel": {
     title: "Pragyan Panel Discussion",
-    posterUrl: null,
+    posterUrl: posterPanelDiscussion,
     registerUrl: "https://forms.gle/U4j88Td6TJcM6Gyu9",
     teamSize: "Individual",
     entryFee: "₹100 /- per person",
@@ -259,13 +260,8 @@ export default function EventDetails({ route, onNavigate }) {
                 />
               </div>
             )}
-            {(route === "event-hackathon" || route === "event-pragyan-panel") ? (
-              <button disabled className="block w-full text-center px-6 py-4 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 rounded-full font-black cursor-not-allowed">
-                {route === "event-hackathon" ? "Launching Soon - Get Ready to Hack" : "Big Minds. Big conversations. Coming Soon!!"}
-              </button>
-            ) : (
-              <a href={data.registerUrl} target="_blank" rel="noreferrer" className="block text-center px-6 py-4 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 rounded-full font-black">Register Here</a>
-            )}
+            {/* Register button/link */}
+            <a href={data.registerUrl} target="_blank" rel="noreferrer" className="block text-center px-6 py-4 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 rounded-full font-black">Register Here</a>
           </div>
         </div>
       </div>
