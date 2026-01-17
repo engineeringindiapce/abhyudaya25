@@ -121,7 +121,7 @@ const EVENT_DATA = {
     teamSize: "3-5",
     entryFee: "₹500/- per team",
 
-    about: "A national-level 24-hour innovation challenge where teams solve real-world problem statements, earn XP, and build prototypes to top the live leaderboard.",
+    about: "A national-level 10-hour innovation challenge where teams solve real-world problem statements and build prototypes to top the live leaderboard.",
     contact: [
       { name: "Coordinator 1: Yashpal Chandewar", phone: "+91-7821903083" },
       { name: "Coordinator 2: Samruddhi Raut", phone: "+91-7248940875" }
