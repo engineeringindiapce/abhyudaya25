@@ -37,7 +37,7 @@ export default function EventsPage({ onNavigate }) {
       id: 9,
       title: "Hackathon",
       description: "Build innovative solutions in a time-bound challenge",
-      detailText: "A 24-hour sprint to prototype and pitch your idea.",
+      detailText: "A 10-hour sprint to prototype and pitch your idea.",
       route: "event-hackathon",
       icon: "💻",
       category: "tech"
